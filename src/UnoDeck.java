@@ -84,8 +84,6 @@ ni
 start
 
 
-this is random text to add 
-//Here is a random comment to show the difference in the branches!
 
 // git add . or git add -A to add all of your changes to github
 // 
