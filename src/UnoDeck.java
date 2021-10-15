@@ -30,7 +30,7 @@ public class UnoDeck {//populating deck of cards
 	}
 	
 	
-	
+	//mark is tying something in UnoDeck.java
 	
 	
 	//shuffling the cards
@@ -40,7 +40,8 @@ public class UnoDeck {//populating deck of cards
 		
 	}
 	
-	
+	//more random stuff
+	//more random stuff
 	//this is a test
 	
 	
