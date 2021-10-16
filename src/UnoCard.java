@@ -12,7 +12,7 @@ public class UnoCard {//creating uno cards
 		this.special = special;
 		this.number = number;
 	}
-	
+	blue
 	
 	//could do String[] ranks = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "Skip", "Reverse", "Draw2", "WildDraw4", Wild"}
 	//String colors = {"Red", "Blue", "Green", "Yellow", "Wild"}
