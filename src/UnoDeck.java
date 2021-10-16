@@ -40,9 +40,6 @@ public class UnoDeck {//populating deck of cards
 		
 	}
 	
-	//more random stuff
-	//more random stuff
-	//this is a test
 	
 	
 //	//draw method
