@@ -1,48 +1,28 @@
-// Fig. 12.19: TipCalculator.java
-// Main application class that loads and displays the Tip Calculator's GUI.
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;//problem here??
+import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+public class Uno extends Application {//Uno game is run from this class
+	//sets the first scene as the Uno menu
+	
+	//Still work in progress - there are Errors in running the GUI
 
-//THIS IS WEHERE EVERYTHING IS RUN OFF OF!!!!!!!!
-
-
-//This template will be the same for other projects other than the file names, description and someother things
-
-public class Uno extends Application {
-   @Override
-   public void start(Stage stage) throws Exception {
-      Parent root = 
-         FXMLLoader.load(getClass().getResource("Uno.fxml"));//change to whatever the Uno fxml looks like
-      //^| error zone
-
-      Scene scene = new Scene(root); // attach scene graph to scene
-      stage.setTitle("Uno"); // displayed in window's title bar
-      stage.setScene(scene); // attach scene to stage
-      stage.show(); // display the stage
-   }
-
-   public static void main(String[] args) {
-      // create a TipCalculator object and call its start method
-      launch(args); 
-   }
+	@Override
+	public void start(Stage stage) {
+		try {
+			Parent root = FXMLLoader.load(getClass().getResource("Uno.fxml"));
+			Scene scene1 = new Scene(root);
+			stage.setScene(scene1);
+			stage.show();
+			
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static void main(String[] args) {
+		launch(args);
+	}
 }
-
-
-/**************************************************************************
- * (C) Copyright 1992-2018 by Deitel & Associates, Inc. and               *
- * Pearson Education, Inc. All Rights Reserved.                           *
- *                                                                        *
- * DISCLAIMER: The authors and publisher of this book have used their     *
- * best efforts in preparing the book. These efforts include the          *
- * development, research, and testing of the theories and programs        *
- * to determine their effectiveness. The authors and publisher make       *
- * no warranty of any kind, expressed or implied, with regard to these    *
- * programs or to the documentation contained in these books. The authors *
- * and publisher shall not be liable in any event for incidental or       *
- * consequential damages in connection with, or arising out of, the       *
- * furnishing, performance, or use of these programs.                     *
- *************************************************************************/
