@@ -13,15 +13,12 @@ public class UnoController {//Controller for UnoController.java)
 
     @FXML private Button exitButton;
     //activating "Exit" Button
-    
-    @FXML private start startButton;
-    
+   
     
     
     
-    
-    
-    @FXLM void startButton
+//    @FXML private start startButton;
+//    start.addactionlistener(new action listener);
     
     
 //    @FXML void startButtonLoadNameScreen(ActionEvent event) throws IOException 
