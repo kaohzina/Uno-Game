@@ -17,7 +17,7 @@ public class EnterPlayerNames {//controller for EnterPlayerNames.fxml
     //fxID: saveButton
     
     
-//    @FXML private Button continueButton;
+    @FXML private Button continueButton; //will transfer to game board
     //OnAction: continueButtonPressed?
     //fxID: continueButton
     
@@ -35,6 +35,10 @@ public class EnterPlayerNames {//controller for EnterPlayerNames.fxml
 
     @FXML
     void savePidMouseClick(MouseEvent event) {
+
+    }
+    
+    @FXML void continueButtonPressed(ActionEvent event) {
 
     }
 

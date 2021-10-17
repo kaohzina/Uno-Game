@@ -38,7 +38,7 @@
          </font>
       </Text>
       <Button layoutX="476.0" layoutY="153.0" minHeight="40.0" mnemonicParsing="false" prefWidth="120.0" text="Add" />
-      <Button layoutX="476.0" layoutY="292.0" minHeight="40.0" mnemonicParsing="false" prefWidth="120.0" text="Continue" />
+      <Button fx:id="continueButton" layoutX="476.0" layoutY="292.0" minHeight="40.0" mnemonicParsing="false" onAction="#continueButtonPressed" prefWidth="120.0" text="Continue" />
       <Text fx:id="pidTextBox" layoutX="181.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="120.0000025331974">
          <font>
             <Font name="Arial" size="31.0" />
