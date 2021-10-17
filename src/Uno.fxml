@@ -12,7 +12,7 @@
             <Font size="20.0" />
          </font>
       </Button>
-      <Button fx:id="exitButton" layoutX="264.0" layoutY="293.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="73.0" text="Exit">
+      <Button layoutX="264.0" layoutY="293.0" mnemonicParsing="false" onAction="#exitButton" prefHeight="53.0" prefWidth="73.0" text="Exit">
          <font>
             <Font name="Arial" size="20.0" />
          </font>

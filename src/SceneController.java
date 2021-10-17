@@ -43,7 +43,9 @@ public class SceneController {
 		stage.show();
 	}
 	
-	
+	public void exitButton(ActionEvent event) throws IOException {
+		System.exit(0);
+	}
 	
 	
 	
