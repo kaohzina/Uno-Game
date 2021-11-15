@@ -23,8 +23,8 @@ public class EnterPlayerNames {//controller for EnterPlayerNames.fxml
     //OnAction: continueButtonPressed?
     //fxID: continueButton
     
-    @FXML
-   private TextField pidTextBox;
+//    @FXML
+//   private TextField pidTextBox;
 
     //Creating arraylist for users names to be input as players 1-4
     ArrayList<String> playerIds = new ArrayList<String>();
@@ -35,54 +35,6 @@ public class EnterPlayerNames {//controller for EnterPlayerNames.fxml
     	return PlayerIDs;
     }
     
-    @FXML private Text pidOneLabel;
-     
-   // playerIds.add();
-    
-    @FXML private Text pidTwoLabel;
-
-    @FXML private Text pidThreeLabel;
-
-    @FXML private Text pidFourLabel;
-    
-    
-    @FXML
-    void saveButtonPressed(ActionEvent event) {//LIKELY NEEDS TO BE REDONE -- COME BACK TO
-		//Is textbox empty?
-		Label labelresponse = new Label();
-		TextField text = new TextField();
-		
-		if (text.getText().isEmpty()) 
-		{
-			labelresponse.setText("Please enter a name.");
-		}
-		else 
-		{
-			String name = pidTextBox.getText();
-			playerIds.add(name);
-			
-			if(playerIds.size() == 1) {//Likely needs to be redone - COME BACK TO
-				pidOneLabel.setText(playerIds.get(0));
-			}
-			else if(playerIds.size() == 2) {
-				pidTwoLabel.setText(playerIds.get(1));
-			}
-			else if(playerIds.size() == 3) {
-				pidThreeLabel.setText(playerIds.get(2));
-			}
-			else if(playerIds.size() == 4) {
-				pidFourLabel.setText(playerIds.get(3));
-			}
-			if(playerIds.size() < 0 || playerIds.size() < 5) {//CHANGE TO ALERT WARNING?!?!
-				throw new IllegalArgumentException("Please enter a name."); //might have to alter this into warning message
-			}
-			
-			
-		}
-		
-		
-		
-    }
 
     @FXML
     void savePidMouseClick(MouseEvent event) {

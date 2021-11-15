@@ -1,45 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <Pane fx:id="EnterPlayerNamePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SceneController">
    <children>
-      <Text layoutX="133.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Player Names" wrappingWidth="384.4700622558594">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffea00" height="485.0" layoutX="-6.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="662.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#323232" height="451.0" layoutX="12.0" layoutY="12.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="627.0" />
+      <Text fill="#ff4848" layoutX="133.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Player Names" textAlignment="CENTER" wrappingWidth="384.4700622558594">
          <font>
-            <Font name="Arial" size="40.0" />
+            <Font name="Eras Demi ITC" size="40.0" />
          </font>
       </Text>
-      <Text layoutX="43.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player Name:" wrappingWidth="138.13671875">
+      <Text fill="#ffe000" layoutX="43.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player Name:" wrappingWidth="138.13671875">
          <font>
             <Font name="Arial" size="20.0" />
          </font>
       </Text>
-      <Text fx:id="pidOneLabel" layoutX="45.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " wrappingWidth="120.0000025331974">
+      <Text fx:id="pidOneLabel" fill="#ffe000" layoutX="77.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " wrappingWidth="190.99999026581645">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Text fx:id="pidTwoLabel" layoutX="241.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " wrappingWidth="96.14520263671875">
+      <Text fx:id="pidTwoLabel" fill="#ffe000" layoutX="390.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " wrappingWidth="190.99999026581645">
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-      <Text fx:id="pidThreeLabel" layoutX="52.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="120.0000025331974">
+      <Text fx:id="pidThreeLabel" fill="#ffe000" layoutX="77.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="190.99999026581645">
          <font>
             <Font name="Arial" size="20.0" />
          </font>
       </Text>
-      <Text fx:id="pidFourLabel" layoutX="234.0" layoutY="360.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="155.33660888671875">
+      <Text fx:id="pidFourLabel" fill="#ffe000" layoutX="390.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="200.33660888671875">
          <font>
             <Font name="Arial" size="20.0" />
          </font>
       </Text>
-      <Button layoutX="476.0" layoutY="153.0" minHeight="40.0" mnemonicParsing="false" prefWidth="120.0" text="Add" />
-      <Button fx:id="continueButton" layoutX="476.0" layoutY="292.0" minHeight="40.0" mnemonicParsing="false" onAction="#continueButtonPressed" prefWidth="120.0" text="Continue" />
-      <TextField layoutX="177.0" layoutY="130.0" />
+      <Button fx:id="addButton" layoutX="351.0" layoutY="122.0" minHeight="40.0" mnemonicParsing="false" onAction="#saveButtonPressed" prefWidth="120.0" text="Add" />
+      <Button fx:id="continueButton" layoutX="490.0" layoutY="122.0" minHeight="40.0" mnemonicParsing="false" onAction="#continueButtonPressed" prefWidth="120.0" text="Continue" />
+      <TextField fx:id="pidTextBox" layoutX="177.0" layoutY="130.0" />
+      <Label fx:id="labelWarning" layoutX="160.0" layoutY="155.0" prefHeight="17.0" prefWidth="191.0" textAlignment="CENTER" visible="false" />
    </children>
 </Pane>
