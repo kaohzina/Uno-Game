@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>Uno-Game</name>
+=======
+	<name>Uno</name>
+>>>>>>> de4c6da61847623204e2bd3d9bc6ce28cc8d0af3
 	<comment></comment>
 	<projects>
 	</projects>
