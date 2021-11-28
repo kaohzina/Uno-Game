@@ -9,6 +9,10 @@ public class UnoDeck {//populating deck of cards
 	
 	public UnoDeck() {
 	
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9caa93ac81413db935b127e661dd306f6815ceba
 		
 	}
 
@@ -41,7 +45,11 @@ public class UnoDeck {//populating deck of cards
 	}
 	
 	
+<<<<<<< HEAD
 	//this is a test
+=======
+	
+>>>>>>> 9caa93ac81413db935b127e661dd306f6815ceba
 	
 	
 //	//draw method
@@ -51,6 +59,10 @@ public class UnoDeck {//populating deck of cards
 //		Deck deck = new Deck(108);
 //		
 //	}
+<<<<<<< HEAD
+=======
+	// something here
+>>>>>>> 9caa93ac81413db935b127e661dd306f6815ceba
 	
 	
 	//deck class
@@ -76,6 +88,19 @@ public class UnoDeck {//populating deck of cards
 	 * 
 	 */
 	
+<<<<<<< HEAD
 	
 	
 }
+=======
+
+	//can you read this message?
+}
+
+
+
+// git add . or git add -A to add all of your changes to github
+// 
+
+
+>>>>>>> 9caa93ac81413db935b127e661dd306f6815ceba
