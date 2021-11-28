@@ -1,11 +1,11 @@
-import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-
-
-public class GameBoard {
-
-	@FXML private Button cardOne;
-	
+//import javafx.fxml.FXML;
+//import javafx.scene.control.Button;
+//
+//
+//public class GameBoard {
+//
+//	@FXML private Button cardOne;
+//	
 
 	//get card image to show up on a button 
 	//look at coverviewer
@@ -21,5 +21,5 @@ public class GameBoard {
 //		ImageView view = new ImageView(img);
 //		cardOne.setGraphic(view);
 //	}
-//	
-}
+////	
+//}
