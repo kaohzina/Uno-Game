@@ -1,5 +1,4 @@
-// Fig. 16.10: DeckOfCardss.java
-// Cards shuffling and dealing with Collections method shuffle.
+
 import java.util.List;
 import java.util.Arrays;
 import java.util.Collections;

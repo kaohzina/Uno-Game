@@ -1,37 +1,6 @@
-<<<<<<< HEAD
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
-
-public class Deck {
-	public static void main(String[] args) {
-		
-		ArrayList<Card> cards = new ArrayList<>();
-		File dir = new File("src/assets/Uno Game Assets/");
-		
-		// for each file in the directory, create an array of segments with a split at the _
-		for (File file : dir.listFiles()) {
-			String[] segments = file.getName().replace(".png", "").split("_");
-			
-			int convertedValue = convertToInt(segments[1]);
-			
-			if (convertedValue != -1) {
-					if(convertedValue == 0) {
-						Card card = new Card(segments[0], String.valueOf(convertedValue), false);
-						cards.add(card);
-						System.out.println(card.cardName());
-						
-					}
-					else {
-						for (int j=0; j<2; j++) {
-							Card card = new Card(segments[0], String.valueOf(convertedValue), false);
-							cards.add(card);
-							System.out.println(card.cardName());
-						}
-						
-					}
-				}
-=======
 
 public class Deck{
 	
@@ -43,6 +12,7 @@ public class Deck{
 	}
 
 	private static Cards[] cards;
+	private static Colors[] colors;
 	private static int cardsInDeck = 0;
 	
 	public Deck() {
@@ -78,12 +48,10 @@ public class Deck{
 					cards[cardsInDeck++] = new Cards(Cards.Colors.Wild, values);
 				}
 			}
->>>>>>> a4939c0d1da51b01e299a216edc29303c86da6c1
 		}
 		
 	}
 	
-<<<<<<< HEAD
 private static int convertToInt(String value) {
 	switch(value) {
 		case "Zero":
@@ -111,9 +79,3 @@ private static int convertToInt(String value) {
 	}
 }
 	
-}
-=======
-	
-}
-
->>>>>>> a4939c0d1da51b01e299a216edc29303c86da6c1
