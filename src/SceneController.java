@@ -1,3 +1,4 @@
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
@@ -9,6 +10,13 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundImage;
+import javafx.scene.layout.BackgroundPosition;
+import javafx.scene.layout.BackgroundRepeat;
+import javafx.scene.layout.BackgroundSize;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.scene.Node;
@@ -33,7 +41,7 @@ public class SceneController {
     @FXML private Text pidThreeLabel;
     @FXML private Text pidFourLabel;
     @FXML private Label labelWarning;
-	
+	@FXML private Button cardOne;
     
     
 	//Uno Main Menu "Start Button" functionality
@@ -76,7 +84,6 @@ public class SceneController {
 			else if(playerIds.size() == 4) {
 				pidFourLabel.setText(playerIds.get(3));
 			}
-
 		}
 	}
 	
@@ -87,6 +94,23 @@ public class SceneController {
 		scene = new Scene(root);
 		stage.setScene(scene);
 		stage.show();
+		
+		
+		//create a function that takes care of this automatically in the card class
+		//103: ("/assets/Uno Game Assets/Blue_Two.png" + color + "_" + value + ".png") or assetLocation
+		cardOne = (Button)scene.lookup("#cardOne");
+		Image img = new Image( getClass().getResource("/assets/Uno Game Assets/Blue_Two.png").toExternalForm());
+		
+		BackgroundSize bSize = new BackgroundSize(BackgroundSize.AUTO, BackgroundSize.AUTO, false, false, true, false);
+		BackgroundImage bImg = new BackgroundImage(img, BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, bSize);
+		
+		Background back = new Background(bImg);
+		cardOne.setBackground(back);
+		
+		
+		
+		
+
 	}
 	
 	//GameBoard "Exit Button" functionality
