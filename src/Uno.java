@@ -1,9 +1,3 @@
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
-
 public class Uno extends Application {//Uno game is run from this class
 	//sets the first scene as the Uno menu
 	

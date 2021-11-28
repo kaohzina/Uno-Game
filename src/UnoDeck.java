@@ -46,10 +46,14 @@ public class UnoDeck {//populating deck of cards
 	
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 	//this is a test
 =======
 	
 >>>>>>> 9caa93ac81413db935b127e661dd306f6815ceba
+=======
+	//this is a test
+>>>>>>> a818dd81430f62a975f09f501a7e3ecb908c769a
 	
 	
 //	//draw method
