@@ -22,3 +22,26 @@ package Game;
 //		launch(args);
 //	}
 //}
+
+// Start rules for the game mechanics
+
+// Draw 2 rule make next player draw two new cards.
+
+
+
+// Skip Turn Rule; change the order of the turns
+
+
+// Reverse Turn Rule; reverse the order of playing
+
+
+// Draw 4 Rule the player the rule applies to must draw four cards
+
+
+// Draw Card Rule; make it so that the player draws a card and turn goes to next person
+
+
+// Uno call rule, call the draw four rule
+
+
+// 
