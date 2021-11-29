@@ -1,13 +1,12 @@
+//package Cards;
 //import java.io.File;
 //import java.util.ArrayList;
 //import java.util.Arrays;
 //
+//import Cards.Cards.Colors;
+//
 //public class Deck {
 //	
-//	public static void main(String[] args) {
-//
-//	}
-//
 //	private static Cards[] cards;
 //	private static int cardsInDeck = 0;
 //
@@ -41,6 +40,8 @@
 //			}
 //		}
 //	}
+//}
+
 //
 //
 //
