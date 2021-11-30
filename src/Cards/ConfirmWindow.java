@@ -1,4 +1,4 @@
-package Game;
+package Cards;
 //import java.awt.Label;
 //import javafx.application.Application;
 //import javafx.event.ActionEvent;

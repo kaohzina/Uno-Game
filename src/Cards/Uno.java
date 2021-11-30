@@ -1,4 +1,4 @@
-package Game;
+package Cards;
 //import java.util.Stack;
 //
 //public class Uno extends Application {//Uno game is run from this class
@@ -24,6 +24,11 @@ package Game;
 //}
 
 // Start rules for the game mechanics
+// Use deck of cards to draw from the deck
+
+// Create a player 
+
+
 
 // Draw 2 rule make next player draw two new cards.
 
@@ -44,4 +49,17 @@ package Game;
 // Uno call rule, call the draw four rule
 
 
-// 
+class Uno {
+	Uno(){
+		this.roundNumber = 0;
+		this.isPlayerTurn = false;
+		this.enemies = [];
+		this.currentPlayer;
+		this.player;
+	}
+}
+
+
+
+
+
