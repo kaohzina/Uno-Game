@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<<<<<<< HEAD
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
@@ -19,71 +18,33 @@
          </font>
       </Text>
       <Text fill="#ffe000" layoutX="43.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player Name:" wrappingWidth="138.13671875">
-=======
-<?import com.gluonhq.charm.glisten.control.TextField?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
-
-<Pane fx:id="EnterPlayerNamePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="EnterPlayerNames">
-   <children>
-      <Text layoutX="133.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Player Names" wrappingWidth="384.4700622558594">
-         <font>
-            <Font name="Arial" size="40.0" />
-         </font>
-      </Text>
-      <Text layoutX="43.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player Name:" wrappingWidth="138.13671875">
->>>>>>> a4939c0d1da51b01e299a216edc29303c86da6c1
          <font>
             <Font name="Arial" size="20.0" />
          </font>
       </Text>
-<<<<<<< HEAD
       <Text fx:id="pidOneLabel" fill="#ffe000" layoutX="77.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " wrappingWidth="190.99999026581645">
-=======
-      <Text layoutX="58.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pidOne">
->>>>>>> a4939c0d1da51b01e299a216edc29303c86da6c1
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-<<<<<<< HEAD
       <Text fx:id="pidTwoLabel" fill="#ffe000" layoutX="390.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" " wrappingWidth="190.99999026581645">
-=======
-      <Text layoutX="219.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pidTwo">
->>>>>>> a4939c0d1da51b01e299a216edc29303c86da6c1
          <font>
             <Font size="20.0" />
          </font>
       </Text>
-<<<<<<< HEAD
       <Text fx:id="pidThreeLabel" fill="#ffe000" layoutX="77.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="190.99999026581645">
-=======
-      <Text layoutX="66.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pidThree">
->>>>>>> a4939c0d1da51b01e299a216edc29303c86da6c1
          <font>
             <Font name="Arial" size="20.0" />
          </font>
       </Text>
-<<<<<<< HEAD
       <Text fx:id="pidFourLabel" fill="#ffe000" layoutX="390.0" layoutY="359.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="200.33660888671875">
-=======
-      <Text layoutX="230.0" layoutY="351.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pidFour">
->>>>>>> a4939c0d1da51b01e299a216edc29303c86da6c1
          <font>
             <Font name="Arial" size="20.0" />
          </font>
       </Text>
-<<<<<<< HEAD
       <Button fx:id="addButton" layoutX="351.0" layoutY="122.0" minHeight="40.0" mnemonicParsing="false" onAction="#saveButtonPressed" prefWidth="120.0" text="Add" />
       <Button fx:id="continueButton" layoutX="490.0" layoutY="122.0" minHeight="40.0" mnemonicParsing="false" onAction="#continueButtonPressed" prefWidth="120.0" text="Continue" />
       <TextField fx:id="pidTextBox" layoutX="177.0" layoutY="130.0" />
       <Label fx:id="labelWarning" layoutX="160.0" layoutY="155.0" prefHeight="17.0" prefWidth="191.0" textAlignment="CENTER" visible="false" />
-=======
-      <Button fx:id="saveButton" layoutX="476.0" layoutY="153.0" minHeight="40.0" mnemonicParsing="false" onAction="#saveButtonPressed" prefWidth="120.0" text="Add" />
-      <Button fx:id="continueButton" layoutX="476.0" layoutY="292.0" minHeight="40.0" mnemonicParsing="false" onAction="#continueButtonPressed" prefWidth="120.0" text="Continue" />
-      <TextField fx:id="pidTextBox" layoutX="177.0" layoutY="130.0" onMouseClicked="#savePidMouseClick" prefHeight="25.0" prefWidth="200.0" />
->>>>>>> a4939c0d1da51b01e299a216edc29303c86da6c1
    </children>
 </Pane>

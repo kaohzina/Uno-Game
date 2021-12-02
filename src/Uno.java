@@ -1,46 +1,28 @@
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
+public class Uno extends Application {//Uno game is run from this class
+	//sets the first scene as the Uno menu
+	
+	//Still work in progress - there are Errors in running the GUI
 
-// Start rules for the game mechanics
-// Use deck of cards to draw from the deck
-
-// Create a player 
-
-
-
-// Draw 2 rule make next player draw two new cards.
-
-
-
-// Skip Turn Rule; change the order of the turns
-
-
-// Reverse Turn Rule; reverse the order of playing
-
-
-// Draw 4 Rule the player the rule applies to must draw four cards
-
-
-// Draw Card Rule; make it so that the player draws a card and turn goes to next person
-
-
-// Uno call rule, call the draw four rule
-
-
-class Uno {
-	Uno(){
-		this.roundNumber = 0;
-		this.isPlayerTurn = false;
-		this.enemies = [];
-		this.currentPlayer;
-		this.player;
+	@Override
+	public void start(Stage stage) {
+		try {
+			Parent root = FXMLLoader.load(getClass().getResource("Uno.fxml"));
+			Scene scene1 = new Scene(root);
+			stage.setScene(scene1);
+			stage.show();
+			
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
 	}
 	
-	void initializeGame() {
-		this.currentPlayer = this.player[0];
+	public static void main(String[] args) {
+		launch(args);
 	}
 }
-
-
-
-
-

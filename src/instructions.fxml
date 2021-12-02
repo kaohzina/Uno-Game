@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SceneController">
+   <children>
+      <Text layoutX="139.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uno Instructions" wrappingWidth="353.13671875">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Text>
+      <TextArea layoutX="58.0" layoutY="62.0" prefHeight="308.0" prefWidth="506.0" text="Object of the Game: First Player to play all cards in their hand wins the game.&#10;&#10;Setup: Each Player is delt 7 cards. Players can play cards that are the same number or color &#10;as the previous card. There are 5 special cards as well. &#10;          - Draw 2 make the next player draw 2 cards from deck. &#10;          - Reverse cards change the gameplay direction.&#10;          - Skip cards skip the turn of the next player&#10;           - Wild cards allow the player to choose one of the four colors&#10;           - Wild draw 4 cards allow the player to choose one of the four colors, and gives four&#10;              cards to the next player &#10;&#10;When a player plays their second-to-last card, an &quot;UNO!&quot; button will randomly appear. The&#10;player has 3 seconds to click the button before the button disapears and the user is delt 2&#10;additional cards.&#10;" />
+      <Button fx:id="instructionNext" layoutX="480.0" layoutY="370.0" mnemonicParsing="false" onAction="#instructionsLoadPlayerNames" prefHeight="25.0" prefWidth="64.0" text="Next" />
+   </children>
+</Pane>

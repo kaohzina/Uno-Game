@@ -287,7 +287,7 @@ class InvalidColorSubmissionException extends Exception {
 	private UnoCard.Color expected;
 	private UnoCard.Color actual;
 	
-	public void InvalidColorSubmissionException(String message, UnoCard.Color actual, UnoCard.Color expected) {
+	public InvalidColorSubmissionException(String message, UnoCard.Color actual, UnoCard.Color expected) {
 		this.actual = actual;
 		this.expected = expected;
 	}

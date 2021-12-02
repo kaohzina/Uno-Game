@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ImageInput?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.RadialGradient?>
 <?import javafx.scene.paint.Stop?>
@@ -20,37 +23,82 @@
             </RadialGradient>
          </fill>
       </Rectangle>
-      <Text layoutX="374.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GameBoard Screen">
+      <Text layoutX="35.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GameBoard Screen">
          <font>
             <Font size="38.0" />
          </font>
       </Text>
-      <Button layoutX="1010.0" layoutY="14.0" mnemonicParsing="false" onAction="#exitButton" text="Exit">
+      <Button layoutX="1248.0" layoutY="19.0" mnemonicParsing="false" onAction="#exitButton" text="Exit">
          <font>
             <Font size="15.0" />
          </font>
+         <!--
+      <fx:define>
+      <Image fx:id="cardBackImage" url="/assets/Uno Game Assets/Deck_Back.png" />
+      </fx:define>
+      -->
+      
       </Button>
-      <Button fx:id="cardOne" layoutX="52.0" layoutY="596.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="53.0" text="cardOne" />
-      <Button fx:id="cardTwo" layoutX="114.0" layoutY="596.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="53.0" text="cardTwo" />
-      <Button fx:id="cardThree" layoutX="176.0" layoutY="596.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="53.0" text="cardThree" />
-      <Button fx:id="cardFour" layoutX="241.0" layoutY="596.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="53.0" text="cardFour" />
-      <Button fx:id="cardFive" layoutX="301.0" layoutY="596.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="53.0" text="cardFive" />
-      <Button fx:id="cardSix" layoutX="360.0" layoutY="596.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="53.0" text="cardSix" />
-      <Button fx:id="cardSeven" layoutX="419.0" layoutY="596.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="53.0" text="cardSeven" />
-      <Button fx:id="cardEight" layoutX="481.0" layoutY="596.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="53.0" text="cardEight" />
-      <Button fx:id="cardNine" layoutX="542.0" layoutY="596.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="53.0" text="cardNine" />
-      <Button fx:id="cardSeventeen" layoutX="481.0" layoutY="693.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="53.0" text="cardSeventeen" />
-      <Button fx:id="cardSixteen" layoutX="419.0" layoutY="693.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="53.0" text="cardSixteen" />
-      <Button fx:id="cardFifteen" layoutX="360.0" layoutY="693.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="53.0" text="cardFifteen" />
-      <Button fx:id="unoOne" layoutX="167.0" layoutY="98.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="77.0" text="UNO!" textFill="#252323" />
-      <Button fx:id="UnoTwo" layoutX="1148.0" layoutY="106.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="90.0" text="UNO!" />
-      <Button fx:id="unoThree" layoutX="348.0" layoutY="466.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="107.0" text="UNO!" />
-      <Button fx:id="unoFour" layoutX="921.0" layoutY="335.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="77.0" text="UNO!" />
-      <Button fx:id="cardFourteen" layoutX="301.0" layoutY="693.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="53.0" text="cardFourteen" />
-      <Button fx:id="cardThirteen" layoutX="241.0" layoutY="693.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="53.0" text="cardThirteen" />
-      <Button fx:id="cardTwelve" layoutX="176.0" layoutY="693.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="53.0" text="cardTwelve" />
-      <Button fx:id="cardEleven" layoutX="114.0" layoutY="693.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="53.0" text="cardEleven" />
-      <Button fx:id="cardTen" layoutX="52.0" layoutY="693.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="53.0" text="cardTen" />
-      <Button fx:id="cardEighteen" layoutX="542.0" layoutY="693.0" mnemonicParsing="false" prefHeight="85.0" prefWidth="53.0" text="cardEighteen" />
+      <Button fx:id="card0" layoutX="52.0" layoutY="543.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card0" />
+      <Button fx:id="card1" layoutX="146.0" layoutY="543.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card1" />
+      <Button fx:id="card2" layoutX="240.0" layoutY="543.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card2" />
+      <Button fx:id="card3" layoutX="334.0" layoutY="543.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card3" />
+      <Button fx:id="card4" layoutX="428.0" layoutY="543.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card4" />
+      <Button fx:id="card5" layoutX="522.0" layoutY="543.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card5" />
+      <Button fx:id="card6" layoutX="616.0" layoutY="543.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card6" />
+      <Button fx:id="card7" layoutX="710.0" layoutY="543.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card7" />
+      <Button fx:id="card8" layoutX="804.0" layoutY="543.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card8" />
+      <Button fx:id="unoOne" layoutX="1129.0" layoutY="458.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="77.0" text="UNO!" textFill="#252323" />
+      <Button fx:id="UnoTwo" layoutX="1209.0" layoutY="458.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="90.0" text="UNO!" />
+      <Button fx:id="unoThree" layoutX="1114.0" layoutY="414.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="107.0" text="UNO!" />
+      <Button fx:id="unoFour" layoutX="1223.0" layoutY="422.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="77.0" text="UNO!" />
+      <Button fx:id="card12" layoutX="1180.0" layoutY="543.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card12" />
+      <Button fx:id="card11" layoutX="1086.0" layoutY="543.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card11" />
+      <Button fx:id="card10" layoutX="992.0" layoutY="543.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card10" />
+      <Button fx:id="card9" layoutX="898.0" layoutY="543.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card9" />
+      <TextField fx:id="pidNameLable" layoutX="52.0" layoutY="490.0" prefHeight="41.0" prefWidth="292.0" />
+      <Button fx:id="discardPile" layoutX="521.0" layoutY="294.0" mnemonicParsing="false" prefHeight="172.0" prefWidth="121.0" text="DisCard" />
+      <Button fx:id="drawPile" layoutX="671.0" layoutY="294.0" mnemonicParsing="false" prefHeight="172.0" prefWidth="121.0" text="Draw" />
+      <Button fx:id="card13" layoutX="52.0" layoutY="676.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card13" />
+      <Button fx:id="card14" layoutX="146.0" layoutY="676.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card14" />
+      <Button fx:id="card15" layoutX="240.0" layoutY="676.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card15" />
+      <Button fx:id="card16" layoutX="334.0" layoutY="676.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card16" />
+      <Button fx:id="card17" layoutX="428.0" layoutY="676.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card17" />
+      <Button fx:id="card18" layoutX="522.0" layoutY="676.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card18" />
+      <Button fx:id="card19" layoutX="616.0" layoutY="676.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card19" />
+      <Button fx:id="card20" layoutX="710.0" layoutY="676.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card20" />
+      <Button fx:id="card21" layoutX="804.0" layoutY="676.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card21" />
+      <Button fx:id="card25" layoutX="1180.0" layoutY="676.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card25" />
+      <Button fx:id="card24" layoutX="1086.0" layoutY="676.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card24" />
+      <Button fx:id="card23" layoutX="992.0" layoutY="676.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card23" />
+      <Button fx:id="card22" layoutX="898.0" layoutY="676.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card22" />
+      
+      <!--  
+      <Button fx:id="cardBack1" layoutX="154.0" layoutY="222.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" rotate="-5.0">
+      <graphic> <ImageView /> </graphic>
+      </Button>
+      -->
+      
+      <Button fx:id="cardBack2" layoutX="189.0" layoutY="220.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" rotate="9.5" />
+      <Button fx:id="cardBack3" layoutX="226.0" layoutY="230.0" maxHeight="128.0" maxWidth="90.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" rotate="16.4" />
+      <Button fx:id="cardBack4" layoutX="574.0" layoutY="83.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" rotate="-5.0" />
+      <Button fx:id="cardBack5" layoutX="609.0" layoutY="81.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" rotate="9.5" />
+      <Button fx:id="cardBack6" layoutX="646.0" layoutY="91.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" rotate="16.4" />
+      <Button fx:id="cardBack7" layoutX="998.0" layoutY="222.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" rotate="-5.0" />
+      <Button fx:id="cardBack8" layoutX="1033.0" layoutY="220.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" rotate="9.5" />
+      <Button fx:id="cardBack9" layoutX="1070.0" layoutY="230.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" rotate="16.4" />
+      
+      <TextField fx:id="pidNameLable1" layoutX="169.0" layoutY="172.0" prefHeight="31.0" prefWidth="131.0" />
+      <TextField fx:id="pidNameLable11" layoutX="589.0" layoutY="34.0" prefHeight="31.0" prefWidth="131.0" />
+      <TextField fx:id="pidNameLable111" layoutX="1013.0" layoutY="172.0" prefHeight="31.0" prefWidth="131.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff" height="128.0" layoutX="1369.0" layoutY="34.0" stroke="BLACK" strokeType="INSIDE" width="90.0">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/C:/Users/Mitchell/Documents/College/College%202021/Intro%20to%20Software/RequestedFiles(UNO)/src/assets/Uno%20Game%20Assets/Deck_Back.png" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Rectangle>
    </children>
 </AnchorPane>
