@@ -13,7 +13,7 @@ import javafx.scene.layout.BackgroundSize;
 
 public class Game {
 
-	private int currentPlayer; // player turn - whose turn is it?
+	public int currentPlayer; // player turn - whose turn is it?
 	private String[] playerIds;// String array of names of players
 	private DeckOfCards cards; // Cards should be the deck of objects from the Deck.java class
 	private ArrayList<ArrayList<Card>> playerHand; // tracking player hands and players (two arrayLists)
@@ -31,12 +31,14 @@ public class Game {
 	static final int DELAY = 45; // online search: timers for java, boolean var for "available"
 
 	public Game(String[] pids, Scene scene) {
+		
 		this.scene = scene;
 		currentPlayer = 0;// player one goes first
 		gameDirection = false; // Standard game direction - going Left
 		cards = new DeckOfCards();
 		playerHand = new ArrayList<ArrayList<Card>>();// Should track all cards from all players
 		discardPile = new ArrayList<Card>();
+		
 
 		playerIds = pids;// PlayerNames entered will be in the Game Class
 
@@ -51,6 +53,15 @@ public class Game {
 			playerHand.add(hand);
 		}
 		displayHand();
+		
+		do {
+			discardPile.add(0, cards.drawCard(1)[0]);
+		} while (discardPile.get(0).getValue() == Card.Value.DrawFour || 
+				discardPile.get(0).getValue() == Card.Value.Random ||
+				discardPile.get(0).getValue() == Card.Value.Reverse ||
+				discardPile.get(0).getValue() == Card.Value.Skip ||
+				discardPile.get(0).getValue() == Card.Value.DrawTwo);
+		displayDiscard();
 	}
 
 	public void startGame(Game game) {
@@ -58,7 +69,7 @@ public class Game {
 		//GammeDirection:
 
 
-		while ((playerHand.get(0).size() * playerHand.get(1).size() *playerHand.get(2).size() * playerHand.get(3).size() != 0) {
+		while ((playerHand.get(0).size() * playerHand.get(1).size() *playerHand.get(2).size() * playerHand.get(3).size() != 0)) {
 
 			//STARTING GAME CONDITIONS
 			Card card = cards.drawCard(1)[0];// drawCard() method to be created in deck (ONLY DRAWING SINGLE CARD)
@@ -70,63 +81,25 @@ public class Game {
 			 * If starting value is: - Reverse - DrawTwo - WildDrawFour - Wild - Skip
 			 * ...then we restart the game on the above conditions
 			 */
+			
 			if (card.getValue() == Card.Value.DrawTwo || card.getValue() == Card.Value.DrawFour
 					|| card.getValue() == Card.Value.Random || card.getValue() == Card.Value.Skip
 					|| card.getValue() == Card.Value.Reverse)
 				startGame(game);
 
-
-
-
-
-			
-
-
 		}
 		
 		
-
-		if(discardPile[0].color || discardPile[0].value != cardPlayed.color || cardPlayer.value) {
-			drawCard();
-			NextPlayer();
-		}
-
-		if(discardPile[0].color || discardPile[0].value == cardPlayed.color || cardPlayer.value) {
-			drawCard();
-
-		}
+		
+		
 
 
-
-			
-			
-			
-			
-			
-			endGame();
-			
+//			endGame();
+//			
 			
 		} // Values of cards not stated yet
 
-		//Moving to SceneBuilder
-	public void applyImage(String buttonID, Card card) {
-		Button btn = (Button)scene.lookup("#" + buttonID);
-		Image img = new Image( getClass().getResource(card.getAssetLocation()).toExternalForm());
-		BackgroundSize bSize = new BackgroundSize(btn.getWidth(), btn.getHeight(), false, false, false, false);
-		BackgroundImage bImg = new BackgroundImage(img, BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, bSize);
-		Background back = new Background(bImg);
-		btn.setBackground(back);
-		btn.setVisible(true);
-	}
-	
-	public void applyCardBackImage(String buttonID) {
-		Button btn = (Button)scene.lookup("#" + buttonID);
-		Image img = new Image( getClass().getResource("/assets/Uno Game Assets/Card_Back.png").toExternalForm());
-		BackgroundSize bSize = new BackgroundSize(btn.getWidth(), btn.getHeight(), false, false, false, false);
-		BackgroundImage bImg = new BackgroundImage(img, BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, bSize);
-		Background back = new Background(bImg);
-		btn.setBackground(back);
-	}
+
 	
 	/**
 	 * after dealing all the cards, we need to loop through the players hand to
@@ -138,7 +111,6 @@ public class Game {
 	 *
 	 */
 	
-
 	public void displayHand() {
 		for (int i = 0; i < 26; i++) {
 			Button btn = (Button)scene.lookup("#card" + i);
@@ -148,8 +120,56 @@ public class Game {
 		for (int i = 0; i < playerHand.get(0).size(); i++) {
 			applyImage("card" + i, playerHand.get(0).get(i));
 		}
-	}//displayHand() ends
+	}
+	
+	public void displayDiscard() {
+		applyImage("discardPile", discardPile.get(0));
+	}
+	
+	public void applyImage(String buttonID, Card card) {
+		Button btn = (Button) scene.lookup("#" + buttonID);
+		Image img = new Image(getClass().getResource(card.getAssetLocation()).toExternalForm());
+		BackgroundSize bSize = new BackgroundSize(btn.getWidth(), btn.getHeight(), false, false, false, false);
+		BackgroundImage bImg = new BackgroundImage(img, BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT,
+				BackgroundPosition.DEFAULT, bSize);
+		Background back = new Background(bImg);
+		btn.setBackground(back);
+		btn.setVisible(true);
+	}
 
+	public void applyCardBackImage(String buttonID) {
+		Button btn = (Button) scene.lookup("#" + buttonID);
+		Image img = new Image(getClass().getResource("/assets/Uno Game Assets/Card_Back.png").toExternalForm());
+		BackgroundSize bSize = new BackgroundSize(btn.getWidth(), btn.getHeight(), false, false, false, false);
+		BackgroundImage bImg = new BackgroundImage(img, BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT,
+				BackgroundPosition.DEFAULT, bSize);
+		Background back = new Background(bImg);
+		btn.setBackground(back);
+	}
+	
+	
+	
+	public void cardPlayed(Card card) {
+		//adding card to 0th index
+		discardPile.add(0, card);
+		displayDiscard();
+	}
+	
+	
+	public boolean isValid(Card card) {
+		if (card.getValue() == Card.Value.Random || card.getValue() == Card.Value.DrawFour || 
+			card.getColor() == discardPile.get(0).getColor() || card.getValue() == discardPile.get(0).getValue()) {
+			
+			return true;
+		}
+		return false; 
+		//wild, wilddrawfour, reverse, skip, draw2
+	}
+	
+	
+
+	
+	
 	public void NextPlayer() {
 		// clockwise
 		if (gameDirection == false) {
@@ -182,8 +202,19 @@ public class Game {
 	//		if(DeckOfCards.getValue() == )
 		}// cardRules method ends
 
-}// public class Game ends
-
+// public class Game ends
+	
+	// return current players hand
+	public ArrayList<Card> getCurrentPlayerHand() {
+		return playerHand.get(currentPlayer);
+	}
+	
+	public Card[] drawCard(int num) {
+		return cards.drawCard(num);
+	}
+	
+	
+	
 	public endGame() {
 		/**
 		 * if (playerHand == 0){

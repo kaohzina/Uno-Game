@@ -33,6 +33,7 @@ public class SceneController {
 	private Parent root;
 	
     ArrayList<String> playerIds = new ArrayList<String>();
+    private static Game gme;
     
     @FXML private Button addButton;
     @FXML private TextField pidTextBox;
@@ -112,13 +113,35 @@ public class SceneController {
 		//make this global
 		String[] stringArray = new String[1];
 		stringArray[0] = "bananas";
-		Game gme = new Game(stringArray, scene);
-		
+		this.gme = new Game(stringArray, scene);
 
 	}
-	
-	
 
+	@FXML public void handButtonPressed(ActionEvent event) throws IOException {
+//		.add(cards.drawCard(1)[0])
+		
+		
+		//the result returned by getSource will be whatever button in hand is pressed
+		Button btn = (Button) event.getSource();
+		// convert the btn's ID from string to an Int starting at index 4 (getting rid of "card" from the ID)
+		int cardIndex =  Integer.parseInt(btn.getId().substring(4));
+		Card clickedCard = this.gme.getCurrentPlayerHand().get(cardIndex);
+		
+		//if clicked card is valid, play the card to the discard pile then remove it from the hand
+		if (this.gme.isValid(clickedCard)) {
+			this.gme.cardPlayed(clickedCard);
+			this.gme.getCurrentPlayerHand().remove(cardIndex);
+			this.gme.displayHand();
+		}
+		
+		
+		//draws card and puts in players hand
+//		this.gme.getCurrentPlayerHand().add(this.gme.drawCard(1)[0]);
+		this.gme.displayHand();
+		
+	}
+
+	
 	
 	//GameBoard "Exit Button" functionality
 	@FXML public void gameBoardExit(ActionEvent event) throws IOException {

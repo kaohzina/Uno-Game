@@ -39,39 +39,39 @@
       -->
       
       </Button>
-      <Button fx:id="card0" layoutX="52.0" layoutY="543.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card0" />
-      <Button fx:id="card1" layoutX="146.0" layoutY="543.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card1" />
-      <Button fx:id="card2" layoutX="240.0" layoutY="543.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card2" />
-      <Button fx:id="card3" layoutX="334.0" layoutY="543.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card3" />
-      <Button fx:id="card4" layoutX="428.0" layoutY="543.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card4" />
-      <Button fx:id="card5" layoutX="522.0" layoutY="543.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card5" />
-      <Button fx:id="card6" layoutX="616.0" layoutY="543.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card6" />
-      <Button fx:id="card7" layoutX="710.0" layoutY="543.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card7" />
-      <Button fx:id="card8" layoutX="804.0" layoutY="543.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card8" />
+      <Button fx:id="card0" layoutX="52.0" layoutY="543.0" mnemonicParsing="false" onAction="#handButtonPressed" prefHeight="128.0" prefWidth="90.0" text="card0" />
+      <Button fx:id="card1" layoutX="146.0" layoutY="543.0" mnemonicParsing="false" onAction="#handButtonPressed" prefHeight="128.0" prefWidth="90.0" text="card1" />
+      <Button fx:id="card2" layoutX="240.0" layoutY="543.0" mnemonicParsing="false" onAction="#handButtonPressed" prefHeight="128.0" prefWidth="90.0" text="card2" />
+      <Button fx:id="card3" layoutX="334.0" layoutY="543.0" mnemonicParsing="false" onAction="#handButtonPressed" prefHeight="128.0" prefWidth="90.0" text="card3" />
+      <Button fx:id="card4" layoutX="428.0" layoutY="543.0" mnemonicParsing="false" onAction="#handButtonPressed" prefHeight="128.0" prefWidth="90.0" text="card4" />
+      <Button fx:id="card5" layoutX="522.0" layoutY="543.0" mnemonicParsing="false" onAction="#handButtonPressed" prefHeight="128.0" prefWidth="90.0" text="card5" />
+      <Button fx:id="card6" layoutX="616.0" layoutY="543.0" mnemonicParsing="false" onAction="#handButtonPressed" prefHeight="128.0" prefWidth="90.0" text="card6" />
+      <Button fx:id="card7" layoutX="710.0" layoutY="543.0" mnemonicParsing="false" onAction="#handButtonPressed" prefHeight="128.0" prefWidth="90.0" text="card7" />
+      <Button fx:id="card8" layoutX="804.0" layoutY="543.0" mnemonicParsing="false" onAction="#handButtonPressed" prefHeight="128.0" prefWidth="90.0" text="card8" />
       <Button fx:id="unoOne" layoutX="1129.0" layoutY="458.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="77.0" text="UNO!" textFill="#252323" />
       <Button fx:id="UnoTwo" layoutX="1209.0" layoutY="458.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="90.0" text="UNO!" />
       <Button fx:id="unoThree" layoutX="1114.0" layoutY="414.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="107.0" text="UNO!" />
       <Button fx:id="unoFour" layoutX="1223.0" layoutY="422.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="77.0" text="UNO!" />
-      <Button fx:id="card12" layoutX="1180.0" layoutY="543.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card12" />
-      <Button fx:id="card11" layoutX="1086.0" layoutY="543.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card11" />
-      <Button fx:id="card10" layoutX="992.0" layoutY="543.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card10" />
-      <Button fx:id="card9" layoutX="898.0" layoutY="543.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card9" />
+      <Button fx:id="card12" layoutX="1180.0" layoutY="543.0" mnemonicParsing="false" onAction="#handButtonPressed" prefHeight="128.0" prefWidth="90.0" text="card12" />
+      <Button fx:id="card11" layoutX="1086.0" layoutY="543.0" mnemonicParsing="false" onAction="#handButtonPressed" prefHeight="128.0" prefWidth="90.0" text="card11" />
+      <Button fx:id="card10" layoutX="992.0" layoutY="543.0" mnemonicParsing="false" onAction="#handButtonPressed" prefHeight="128.0" prefWidth="90.0" text="card10" />
+      <Button fx:id="card9" layoutX="898.0" layoutY="543.0" mnemonicParsing="false" onAction="#handButtonPressed" prefHeight="128.0" prefWidth="90.0" text="card9" />
       <TextField fx:id="pidNameLable" layoutX="52.0" layoutY="490.0" prefHeight="41.0" prefWidth="292.0" />
       <Button fx:id="discardPile" layoutX="521.0" layoutY="294.0" mnemonicParsing="false" prefHeight="172.0" prefWidth="121.0" text="DisCard" />
       <Button fx:id="drawPile" layoutX="671.0" layoutY="294.0" mnemonicParsing="false" prefHeight="172.0" prefWidth="121.0" text="Draw" />
-      <Button fx:id="card13" layoutX="52.0" layoutY="676.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card13" />
-      <Button fx:id="card14" layoutX="146.0" layoutY="676.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card14" />
-      <Button fx:id="card15" layoutX="240.0" layoutY="676.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card15" />
-      <Button fx:id="card16" layoutX="334.0" layoutY="676.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card16" />
-      <Button fx:id="card17" layoutX="428.0" layoutY="676.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card17" />
-      <Button fx:id="card18" layoutX="522.0" layoutY="676.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card18" />
-      <Button fx:id="card19" layoutX="616.0" layoutY="676.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card19" />
-      <Button fx:id="card20" layoutX="710.0" layoutY="676.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card20" />
-      <Button fx:id="card21" layoutX="804.0" layoutY="676.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card21" />
-      <Button fx:id="card25" layoutX="1180.0" layoutY="676.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card25" />
-      <Button fx:id="card24" layoutX="1086.0" layoutY="676.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card24" />
-      <Button fx:id="card23" layoutX="992.0" layoutY="676.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card23" />
-      <Button fx:id="card22" layoutX="898.0" layoutY="676.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" text="card22" />
+      <Button fx:id="card13" layoutX="52.0" layoutY="676.0" mnemonicParsing="false" onAction="#handButtonPressed" prefHeight="128.0" prefWidth="90.0" text="card13" />
+      <Button fx:id="card14" layoutX="146.0" layoutY="676.0" mnemonicParsing="false" onAction="#handButtonPressed" prefHeight="128.0" prefWidth="90.0" text="card14" />
+      <Button fx:id="card15" layoutX="240.0" layoutY="676.0" mnemonicParsing="false" onAction="#handButtonPressed" prefHeight="128.0" prefWidth="90.0" text="card15" />
+      <Button fx:id="card16" layoutX="334.0" layoutY="676.0" mnemonicParsing="false" onAction="#handButtonPressed" prefHeight="128.0" prefWidth="90.0" text="card16" />
+      <Button fx:id="card17" layoutX="428.0" layoutY="676.0" mnemonicParsing="false" onAction="#handButtonPressed" prefHeight="128.0" prefWidth="90.0" text="card17" />
+      <Button fx:id="card18" layoutX="522.0" layoutY="676.0" mnemonicParsing="false" onAction="#handButtonPressed" prefHeight="128.0" prefWidth="90.0" text="card18" />
+      <Button fx:id="card19" layoutX="616.0" layoutY="676.0" mnemonicParsing="false" onAction="#handButtonPressed" prefHeight="128.0" prefWidth="90.0" text="card19" />
+      <Button fx:id="card20" layoutX="710.0" layoutY="676.0" mnemonicParsing="false" onAction="#handButtonPressed" prefHeight="128.0" prefWidth="90.0" text="card20" />
+      <Button fx:id="card21" layoutX="804.0" layoutY="676.0" mnemonicParsing="false" onAction="#handButtonPressed" prefHeight="128.0" prefWidth="90.0" text="card21" />
+      <Button fx:id="card25" layoutX="1180.0" layoutY="676.0" mnemonicParsing="false" onAction="#handButtonPressed" prefHeight="128.0" prefWidth="90.0" text="card25" />
+      <Button fx:id="card24" layoutX="1086.0" layoutY="676.0" mnemonicParsing="false" onAction="#handButtonPressed" prefHeight="128.0" prefWidth="90.0" text="card24" />
+      <Button fx:id="card23" layoutX="992.0" layoutY="676.0" mnemonicParsing="false" onAction="#handButtonPressed" prefHeight="128.0" prefWidth="90.0" text="card23" />
+      <Button fx:id="card22" layoutX="898.0" layoutY="676.0" mnemonicParsing="false" onAction="#handButtonPressed" prefHeight="128.0" prefWidth="90.0" text="card22" />
       
       <!--  
       <Button fx:id="cardBack1" layoutX="154.0" layoutY="222.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="90.0" rotate="-5.0">
